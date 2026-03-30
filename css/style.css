@@ -1,0 +1,36 @@
+/* This is the css file */
+
+.navbar {
+  padding: 15px;
+  background: #693F26;
+}
+
+#logo {
+  border-radius: 8px;
+  width: 100px; 
+  height: 100px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2rem;    /* rem is scalable with root font size, good for navbar */
+  color: #F5F5F5;
+}
+
+h1 {
+    padding: 15px;
+}
+
+p {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+iframe {
+    width: 17rem;
+    height: 17rem;
+    padding: 15px; 
+}
+
