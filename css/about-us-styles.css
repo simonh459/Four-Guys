@@ -5,16 +5,16 @@
   background: #693F26;
 }
 
-#logo {
-  border-radius: 8px;
-  width: 100px; 
-  height: 100px;
-}
-
 .navbar-brand {
   font-weight: bold;
   font-size: 2rem;    /* rem is scalable with root font size, good for navbar */
   color: #F5F5F5;
+}
+
+#logo {
+  border-radius: 8px;
+  width: 100px; 
+  height: 100px;
 }
 
 h1 {
@@ -28,9 +28,77 @@ p {
     padding-bottom: 32px;
 }
 
+.header-image {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+}
+
 iframe {
     width: 17rem;
     height: 17rem;
     padding: 15px; 
 }
 
+/* FOOTER */
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #007bff;
+    --footer-bg: #f8f9fa;
+    --footer-text: #6c757d;
+    --footer-border: #dee2e6;
+    --base-font-size: 1rem;
+}
+
+body.large-text {
+    --base-font-size: 1.25rem;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: var(--base-font-size);
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Footer */
+.footer-a11y {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 2rem 0;
+    border-top: 1px solid var(--footer-border);
+}
+
+.footer-a11y__grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.footer-a11y__options {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-a11y__button {
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--footer-border);
+    padding: 0.25rem 0.6rem;
+    font-size: 0.8em;
+    border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+    .footer-a11y__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+} /* change size of grid layout if screen has enough room */

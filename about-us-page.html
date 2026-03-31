@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="images/Four_Guys-favicon.png"> <!-- Favicon image for top bar-->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about-us-styles.css">
 
     <script src="js/jquery.js"></script> <!--  only needed if using jquery--> 
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -15,51 +15,122 @@
   
 
 </head>
-<body>
+  <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container-fluid">
+      <div class="container-fluid">
     
-    <!-- Logo / Brand -->
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img id="logo" src="images/logo.png" alt="Four Guys Logo" class="me-3"> <!-- me3 adds whitespace between logo and title-->
-      Four Guys
-  </a>
+        <!-- Logo / Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img id="logo" src="images/logo.png" alt="Four Guys Logo" class="me-3"> <!-- me3 adds whitespace between logo and title-->
+          Four Guys
+        </a>
 
-    <!-- Mobile toggle button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Mobile toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-  </div>
-</nav> <!-- End of nav bar-->
+      </div>
+    </nav> <!-- End of nav bar-->
 
-<h1> About our restaurant...</h1>
-<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-   dignissimos minima assumenda quasi quos perspiciatis ipsa, odit odio
-    deserunt error. Maxime harum blanditiis rem eveniet beatae at et aut
-     illum ipsam voluptates?</p>
+    <h1> About our restaurant...</h1>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+      dignissimos minima assumenda quasi quos perspiciatis ipsa, odit odio
+        deserunt error. Maxime harum blanditiis rem eveniet beatae at et aut
+        illum ipsam voluptates?</p>
 
-     <div class="position-absolute bottom-0 end-0">
+    <div class="container mt-5">
+      <div class="card shadow-lg border-0">
+        <div class="row g-0 align-items-center">
+
+          <!-- First card -->
+          <div class="row g-0 align-items-center">
+            <div class="col-md-5">
+              <img src="images/about-us-customer-service.jpg" class="img-fluid rounded-start header-image">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h4>Customer First Approach</h4>
+                  <p>As a restaurant, we guarantee that our customer's are put at the front
+                      of our service, providing high-quality foods which arrive in quick fashion.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second card -->
+          <div class="row g-0 align-items-center">
+            <div class="col-md-7 order-md-1 order-2">
+              <div class="card-body">
+                <h4>High Quality Food</h4>
+                <p>We ensure that all our products are made from the highest quality available, so we can deliver the best service to you.
+                    Our suppliers follow strict guidelines and our on-floor chefs use high-grade equipment.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5 order-md-2 order-1">
+              <img src="images/about-us-quality-food.jpg" class="img-fluid rounded-start header-image">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>    
+
+
+     <div class="container mt-5W">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1155.4718317326751!2d-5.928935791066071!3d54.604985074630804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1774614672189!5m2!1sen!2suk"
        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+      <footer class="footer-a11y" role="contentinfo">
+        <div class="container">
+            <div class="footer-a11y__grid">
+                <div class="footer-a11y__controls">
+                    <h3>Accessibility Tools</h3>
+                    <div class="footer-a11y__options">
+                        <button id="toggle-contrast" class="footer-a11y__button" aria-pressed="false" aria-label="Toggle High Contrast Mode">
+                            <svg role="img" viewBox="0 0 24 24"><title>Contrast</title><path d="M12 22.314a10.314 10.314 0 110-20.628 10.314 10.314 0 010 20.628zM12 3.5a8.5 8.5 0 000 17V3.5z"/></svg>
+                            Contrast
+                        </button>
+                        <button id="toggle-text-size" class="footer-a11y__button" aria-pressed="false" aria-label="Toggle Text Size">
+                             <svg viewBox="0 0 24 24"><title>Text Size</title><path d="m22 6-3-4-3 4h2v4h-2l3 4 3-4h-2V6zM9.307 4l-6 16h2.137l1.875-5h6.363l1.875 5h2.137l-6-16H9.307zm-1.239 9L10.5 6.515 12.932 13H8.068z"/></svg>
+                            Text Size
+                        </button>
+                    </div>
+                </div>
+                <nav class="footer-a11y__nav" aria-label="Footer Navigation">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-a11y__copyright">
+                <p>&copy; 2026 Four Guys Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>  
+
+    <script src="js/about-us-scripts.js"></script>
 </body>
 </html>
