@@ -17,6 +17,16 @@
   height: 100px;
 }
 
+.jumbotron-image {
+  min-height: 315px; /*keeps structure on smaller screens */
+  padding: 3rem;  
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), /* MAKES IMAGE SLIGHTLY LESS BRIGHT */
+                    url('../images/jumbotron-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 h1 {
     padding: 15px;
 }
@@ -28,7 +38,7 @@ p {
     padding-bottom: 32px;
 }
 
-.header-image {
+.card-image {
     width: 100%;
     height: 325px;
     object-fit: cover;
