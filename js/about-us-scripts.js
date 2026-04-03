@@ -17,4 +17,29 @@
                     toggleOption(textSizeButton, 'large-text');
                 });
             }
+
+            let currentSlide = 0;
+            const slides = document.querySelectorAll(".slide");
+
+            // show first slide
+            showSlide(currentSlide);
+
+            function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove("active"));
+
+            // loop back if out of range
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            slides[currentSlide].classList.add("active");
+            }
+
+            window.changeSlide = function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+            }
         });
