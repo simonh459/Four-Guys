@@ -1,5 +1,6 @@
 /* This is the css file */
 
+/* Navbar */
 .navbar {
   padding: 15px;
   background: #693F26;
@@ -17,6 +18,8 @@
   height: 100px;
 }
 
+
+/* Jumbotron */
 .jumbotron-image {
   min-height: 315px; /*keeps structure on smaller screens */
   padding: 3rem;  
@@ -25,8 +28,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-size: 1.2rem;
 }
 
+body.large-text .jumbotron-image {
+  padding: 5rem; /* adds whitespace to jumbotron when text size increased */
+}
+
+
+/* Marquee */
 .marquee {
     position: relative;
     overflow: hidden;
@@ -44,8 +54,8 @@
 }
 
 .marquee-content img {
-    height: 110px;
-    width: 180px;
+    height: 140px;
+    width: 200px;
 }
 
 @keyframes scroll {
@@ -59,6 +69,7 @@
   }
 }
 
+
 p {
     padding-left: 128px;
     padding-right: 128px;
@@ -66,26 +77,71 @@ p {
     padding-bottom: 32px;
 }
 
-.card-image {
+
+/* Slideshow */
+.slideshow{
     width: 100%;
-    height: 325px;
-    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+/* left arrow */
+.arrow.prev {
+  left: 10px;
+}
+
+/* right arrow */
+.arrow.next {
+  right: 10px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.slide {
+  display: none;
+  height: 100%
+}
+
+.slide.active {
+  display: block;
+  height: 100%;
+}
+
+.slide img {
+    height: 325px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Buttons */
 .primary-btn {
   color: #B56727;
   border: 1px solid #B56727;
 }
 
 .primary-btn:hover {
+  color: #f5f5f5;
   background-color: #944f1e; /* darker shade when hovered*/
   border-color: #944f1e;
-}
-
-iframe {
-    width: 17rem;
-    height: 17rem;
-    padding: 15px; 
 }
 
 /* FOOTER */
