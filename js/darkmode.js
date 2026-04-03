@@ -1,3 +1,4 @@
+// Function that allows for the previously used theme (if the website is used before) to be retrieved from localstorage
 window.onload = function () {
     // Temporarily disable transitions
     document.body.classList.add("no-transition");
@@ -12,6 +13,7 @@ window.onload = function () {
     }, 50);
 };
 
+// Function to facilitate manually toggling dark mode on/off
 function darkmodeFunc() {
     document.body.classList.toggle("dark-mode");
 
