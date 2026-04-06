@@ -11,12 +11,10 @@
 
     <script src="js/jquery.js"></script> <!--  only needed if using jquery--> 
     <script src="js/bootstrap.bundle.min.js"></script>
-
-  
+    <script src="js/darkmode.js" defer></script>
 
 </head>
   <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
     
@@ -44,7 +42,7 @@
               <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="faqs.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -57,22 +55,34 @@
       <div class="col-md-12">
         <div class="text-light jumbotron-image">
           <h2>About Our Restaurant...</h2>
-          <p>Four Guys is a modern restaurant specialising in pizza and burgers, in the heart of Belfast.
+          <p class="fade-in">Four Guys is a modern restaurant specialising in pizza and burgers located in the heart of Belfast.
             Established in 2022, Four Guys focuses on delivering high-quality food in a relaxing environment
             with an emphasis on customer-service. Since opening, Four Guys has became a popular local spot
             for local and tourist alike, combining friendly customer service and great food.
           </p>
-          <button class="btn btn-outline-light" type="button">Example button</button>
+
+          <p class="extra-text" style="display:none;">
+          The owners of Four Guys thought long and hard what makes a great restaurant. The food only makes a part of the restaurant,
+          but the customers are what makes a restaurant complete. Our customer service policy ensures that the customer must enjoy every
+          minute within our restaurant. This ensures that we create a welcoming and warm environment along with exciting and tasteful
+          dishes for all to try.<br><br>
+
+          Whilst we have a great focus on the customer, we still spend many hours perfecting and tweaking our menu. Four Guys attempts
+          to get people to step outside their food-comfort zones, trying exciting and new flavours. Many foods are rotated in and out 
+          of our menu as we listen carefully to customer ratings on how to improve our menu.
+          </p>
+
+          <button class="btn btn-outline-light read-more" type="button">Read more..</button>
         </div>
       </div>
 
-    <p class="text-center"> At Four Guys, we pride ourselves with being among the highest quality restaurants
-        in Northern Ireland. Have a quick look at our favourite awards we have won!</p>
+    <p class="text-center fade-in"> At Four Guys, we pride ourselves with being among the highest quality restaurants
+        in Northern Ireland. Have a quick look at our favourite awards!</p>
 
     <div class="marquee">
       <div class="marquee-content">
         <img src="images/tripadvisor-award.png" alt="Tripadvisor 4.5/5 rating">
-        <img src="images/AA-Rosette-Award.jpg" alt="4/5 AA Rosette rating for culinary excellence">
+        <img src="images/AA-Rosette-Award.png" alt="4/5 AA Rosette rating for culinary excellence">
         <img src="images/national-restaurant-award.jpg" alt="National Restaurant Award for high-quality food 2024">
         <img src="images/good-food-ireland-award.jpg" alt="Good Food Ireland Award 2024">
       </div>
@@ -91,7 +101,7 @@
             <div class="col-md-7">
               <div class="card-body">
                 <h4 class="text-center">Customer First Approach</h4>
-                  <p class="text-center">As a restaurant, we put our visitors at the centre of everything we do. From the moment you walk through the door
+                  <p class="text-center fade-in">As a restaurant, we put our visitors at the centre of everything we do. From the moment you walk through the door
                     , our focus is on creating a welcoming and comforting environment where you feel valued. We prioritise attentive
                     service and aim to respond quickly to consumer queries to ensure an enjoyable dining experience.
                   </p>
@@ -107,7 +117,7 @@
             <div class="col-md-7 order-md-1 order-2 h-100">
               <div class="card-body">
                 <h4 class="text-center">High Quality Food</h4>
-                <p class="text-center">We are comitted to serving delicious food made from fresh, carefully selected ingredients. We specialise in creating
+                <p class="text-center fade-in">We are comitted to serving delicious food made from fresh, carefully selected ingredients. We specialise in creating
                   flavourful pizzas and tasty burgers, looking to deliver a consistent quality with each bite. Our focus is combining 
                   great taste with great prices to create satisfying meals which leaves everyone happy.
                 </p>
@@ -132,9 +142,17 @@
                 <div class="slide">
                     <img src="images/about-us-milkshake.jpeg" class="img-fluid" alt="milkshake ready to be served to a customer">
                 </div>
-                          <!-- Arrows -->
-                  <button class="arrow prev" onclick="changeSlide(-1)">&#10094;</button>
-                  <button class="arrow next" onclick="changeSlide(1)">&#10095;</button>
+
+                <!-- Interactive dots -->
+                <div class="dots">
+                  <span class="dot" onclick="goToSlide(0)"></span>
+                  <span class="dot" onclick="goToSlide(1)"></span>
+                  <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+
+                <!-- Arrows -->
+                <button class="arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="arrow next" onclick="changeSlide(1)">&#10095;</button>
 
               </div>
             </div>
@@ -151,7 +169,7 @@
                 <div class="footer-a11y__controls">
                     <h3>Accessibility Tools</h3>
                     <div class="footer-a11y__options">
-                        <button id="toggle-contrast" class="footer-a11y__button" aria-pressed="false" aria-label="Toggle High Contrast Mode">
+                        <button id="darkModeBtn" type="button" class="footer-a11y__button" aria-pressed="false" aria-label="Toggle High Contrast Mode" onclick="darkmodeFunc()">
                             <svg role="img" viewBox="0 0 24 24"><title>Contrast</title><path d="M12 22.314a10.314 10.314 0 110-20.628 10.314 10.314 0 010 20.628zM12 3.5a8.5 8.5 0 000 17V3.5z"/></svg>
                             Contrast
                         </button>

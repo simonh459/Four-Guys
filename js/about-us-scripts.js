@@ -1,7 +1,7 @@
  document.addEventListener('DOMContentLoaded', () => {
             const body = document.body;
-            const contrastButton = document.getElementById('toggle-contrast');
             const textSizeButton = document.getElementById('toggle-text-size');
+            const dots = document.querySelectorAll(".dot");
 
             // Function to toggle a class on the body and update the button state
             function toggleOption(button, className) {
@@ -18,6 +18,7 @@
                 });
             }
 
+            //Slideshow
             let currentSlide = 0;
             const slides = document.querySelectorAll(".slide");
 
@@ -26,6 +27,7 @@
 
             function showSlide(index) {
             slides.forEach(slide => slide.classList.remove("active"));
+            dots.forEach(dot => dot.classList.remove("active"));
 
             // loop back if out of range
             if (index >= slides.length) {
@@ -37,9 +39,31 @@
             }
 
             slides[currentSlide].classList.add("active");
+            dots[currentSlide].classList.add("active");
             }
 
             window.changeSlide = function changeSlide(direction) {
             showSlide(currentSlide + direction);
             }
+
+            window.goToSlide = function(index) {
+            showSlide(index);
+            }
+
+            // automatic timer set for 5 seconds
+            setInterval(() => {
+                changeSlide(1);
+            }, 5000);
+
         });
+
+// jQuery code
+$(document).ready(function() {
+  $(".read-more").click(function() {
+    $(".extra-text").toggle();
+  });
+});
+
+$(document).ready(function() {
+  $(".fade-in").hide().fadeIn(1000);
+});
