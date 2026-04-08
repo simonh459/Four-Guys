@@ -188,7 +188,7 @@ body.dark-mode {
 }
 
 /* Smooth theme transition */
-body, .card, .jumbotron, .navbar {
+body, .card, .jumbotron, .accordion, .accordion-item, .accordion-button, .accordion-body, .accordion-button::after, .accordion-button:not(.collapsed), .footer-a11y, .footer-a11y__button, .jumbotron, .navbar {
   transition: background-color 0.5s ease, color 0.5s ease;
 }  
 
