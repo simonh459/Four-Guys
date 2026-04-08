@@ -58,12 +58,30 @@
         });
 
 // jQuery code
+// read more button changes text when clicked and toggle scroll animation
 $(document).ready(function() {
   $(".read-more").click(function() {
-    $(".extra-text").toggle();
+    $(".extra-text").slideToggle(400);
+
+    if ($(this).text() === "Read more..") {
+      $(this).text("Show less..")}
+    else {
+      $(this).text("Read more..")}
   });
 });
 
+
+// selected text fades in when page is loaded
 $(document).ready(function() {
   $(".fade-in").hide().fadeIn(1000);
+});
+
+
+// animation when any button is clicked
+$(".btn").click(function () {
+  $(this).addClass("clicked");
+
+  setTimeout(() => {
+    $(this).removeClass("clicked");
+  }, 200);
 });

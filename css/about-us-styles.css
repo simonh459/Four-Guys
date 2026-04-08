@@ -158,6 +158,11 @@ body.large-text .jumbotron-image {
   border-color: #944f1e;
 }
 
+.clicked {
+  transform: scale(0.95);
+  transition: 0.2s;
+}
+
 
 /*  paragraph padding for card and jumbotron*/
 p {
