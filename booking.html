@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/booking-styles.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+    
+        <!-- Logo / Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img id="logo" src="images/logo.png" alt="Four Guys Logo" class="me-3"> <!-- me3 adds whitespace between logo and title-->
+          Four Guys
+        </a>
+
+        <!-- Mobile toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav> <!-- End of nav bar-->
+
+<div class="container mt-5">
+  <div class="row align-items-center">
+
+    <!-- Image Column -->
+    <div class="col-md-4 mb-4">
+      <img src="images/logo.png" alt="Restaurant interior" class="img-fluid rounded">
+    </div>
+
+    <!-- Form Column -->
+    <div class="col-md-8">
+      <div class="booking-container">
+        <h2 class="text-center">Book a Table</h2>
+
+        <form id="bookingForm" action="submit_booking.php" method="POST">
+
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Booking Date:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="time">Booking Time:</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="">Select...</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="5+">5+ People</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" name="requests"></textarea>
+          </div>
+
+          <button type="submit">Reserve Table</button>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Your JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
