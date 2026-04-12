@@ -65,3 +65,55 @@ button {
 button:hover {
     background-color: #4e2d1c;
 }
+
+/* Review column */
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+}
+
+/* Alternate tilt for stacked effect */
+.review-card:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.review-card:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+
+.review-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #693F26;
+}
+
+/* profile pictures */
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.review-user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-user span {
+    font-weight: bold;
+    color: #693F26;
+}

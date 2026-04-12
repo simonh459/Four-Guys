@@ -48,9 +48,48 @@
 <div class="container mt-5">
   <div class="row align-items-center">
 
-    <!-- Image Column -->
+    <!-- Reviews Column -->
     <div class="col-md-4 mb-4">
-      <img src="images/logo.png" alt="Restaurant interior" class="img-fluid rounded">
+      <div class="reviews-container">
+
+        <div class="review-card">
+          <p>"Amazing food and great service!"</p>
+
+          <div class="review-user">
+            <span>- Sarah</span>
+            <img src="images/booking-pfp-sarah.jpg" alt="Profile picture of user: Sarah">
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p>"Best restaurant I've been to in years."</p>
+
+          <div class="review-user">
+            <span>- James</span>
+            <img src="images/booking-pfp-default-male.jpg" alt="Profile picture of user: James">
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p>"Loved the atmosphere and the staff were so friendly."</p>
+
+          <div class="review-user">
+            <span>- Emily</span>
+            <img src="images/booking-pfp-default-female.png" alt="Profile picture of user: Emily">
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p>"Will definitely be coming back again."</p>
+
+          <div class="review-user">
+            <span>- Johnny</span>
+            <img src="images/booking-pfp-default-johnny.jpg" alt="Profile picture of user: Johnny">
+
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <!-- Form Column -->
@@ -99,7 +138,9 @@
 
           <div class="form-group">
             <label for="requests">Special Requests</label>
-            <textarea id="requests" name="requests"></textarea>
+            <textarea id="requests" name="requests" maxlength="100"></textarea>
+              <small><span id="charcount">100</span> characters remaining</small>
+
           </div>
 
           <button type="submit">Reserve Table</button>
@@ -112,10 +153,10 @@
 </div>
 
 <!-- jQuery -->
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
 
 <!-- Your JS -->
-<script src="js/script.js"></script>
+<script src="js/booking-scripts.js"></script>
 
 </body>
 </html>
