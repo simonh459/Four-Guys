@@ -14,7 +14,7 @@
     <script src="js/darkmode.js" defer></script>
 
 </head>
-  <body>
+  <body id="top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
     
@@ -168,7 +168,7 @@
             <div class="footer-a11y__grid">
                 <div class="footer-a11y__controls">
                     <h3>Accessibility Tools</h3>
-                    <div class="footer-a11y__options">
+                    <div class="footer-a11y__options"> <!-- footer accesibility buttons -->
                         <button id="darkModeBtn" type="button" class="btn footer-a11y__button" aria-pressed="false" aria-label="Toggle High Contrast Mode" onclick="darkmodeFunc()">
                             <svg role="img" viewBox="0 0 24 24"><title>Contrast</title><path d="M12 22.314a10.314 10.314 0 110-20.628 10.314 10.314 0 010 20.628zM12 3.5a8.5 8.5 0 000 17V3.5z"/></svg>
                             Contrast
@@ -179,11 +179,18 @@
                         </button>
                     </div>
                 </div>
-                <nav class="footer-a11y__nav" aria-label="Footer Navigation">
+
+                <div class="footer-a11y__social"> <!-- footer social media buttons -->
+                    <a href="https://www.facebook.com/?locale=en_GB"><img src="images/facebook-logo.png" alt="Facebook"></a>
+                    <a href="https://x.com/"><img src="images/x-logo.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/?hl=en"><img src="images/instagram-logo.png" alt="Instagram"></a>
+                </div>
+
+                <nav class="footer-a11y__nav" aria-label="Footer Navigation"> <!-- footer links -->
                     <ul>
-                        <li><a href="#">About</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="#top">Back To Top</a></li>
                     </ul>
                 </nav>
             </div>
