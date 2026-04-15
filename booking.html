@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Booking</title>
+    <title>Booking Page</title>
+    <link rel="icon" type="image/x-icon" href="images/Four_Guys-favicon.png"> <!-- Favicon image for top bar-->
+
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/booking-styles.css">
@@ -13,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
     
-        <!-- Logo / Brand -->
+        <!-- Brand -->
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img id="logo" src="images/logo.png" alt="Four Guys Logo" class="me-3"> <!-- me3 adds whitespace between logo and title-->
           Four Guys
@@ -24,7 +26,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Links -->
+        <!-- Buttons -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -34,10 +36,10 @@
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
+              <a class="nav-link" href="about-us.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="faqs.html">Contact</a>
+              <a class="nav-link" href="faqs.html">Booking</a>
             </li>
           </ul>
         </div>
@@ -121,7 +123,7 @@
 
           <div class="form-group">
             <label for="time">Booking Time:</label>
-            <input type="time" id="time" name="time" required>
+            <input type="time" id="time" name="time" min="12:00" max="22:00" required>
           </div>
 
           <div class="form-group">
