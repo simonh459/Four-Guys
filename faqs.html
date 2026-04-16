@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us Page</title>
+    <title>FAQs Page</title>
     <link rel="icon" type="image/x-icon" href="images/Four_Guys-favicon.png"> <!-- Favicon image for top bar-->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/faqs-styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/jquery.js"></script> <!--  only needed if using jquery--> 
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -39,10 +39,13 @@
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
+              <a class="nav-link" href="gallery.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="faqs.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">Booking</a>
             </li>
           </ul>
         </div>
@@ -129,26 +132,33 @@
 
     <!-- Footer -->
     <footer class="footer-a11y" role="contentinfo">
-         <div class="container">
+        <div class="container">
             <div class="footer-a11y__grid">
                 <div class="footer-a11y__controls">
                     <h3>Accessibility Tools</h3>
-                    <div class="footer-a11y__options">
-                        <button id="darkModeBtn" type="button" class="footer-a11y__button" aria-pressed="false" aria-label="Toggle High Contrast Mode" onclick="darkmodeFunc()">
+                    <div class="footer-a11y__options"> <!-- footer accesibility buttons -->
+                        <button id="darkModeBtn" type="button" class="btn footer-a11y__button" aria-pressed="false" aria-label="Toggle High Contrast Mode" onclick="darkmodeFunc()">
                             <svg role="img" viewBox="0 0 24 24"><title>Contrast</title><path d="M12 22.314a10.314 10.314 0 110-20.628 10.314 10.314 0 010 20.628zM12 3.5a8.5 8.5 0 000 17V3.5z"/></svg>
                             Contrast
                         </button>
-                        <button id="toggle-text-size" class="footer-a11y__button" aria-pressed="false" aria-label="Toggle Text Size">
+                        <button id="toggle-text-size" class="btn footer-a11y__button" aria-pressed="false" aria-label="Toggle Text Size">
                              <svg viewBox="0 0 24 24"><title>Text Size</title><path d="m22 6-3-4-3 4h2v4h-2l3 4 3-4h-2V6zM9.307 4l-6 16h2.137l1.875-5h6.363l1.875 5h2.137l-6-16H9.307zm-1.239 9L10.5 6.515 12.932 13H8.068z"/></svg>
                             Text Size
                         </button>
                     </div>
                 </div>
-                <nav class="footer-a11y__nav" aria-label="Footer Navigation">
+
+                <div class="footer-a11y__social"> <!-- footer social media buttons -->
+                    <a href="https://www.facebook.com/?locale=en_GB"><img src="images/facebook-logo.png" alt="Facebook"></a>
+                    <a href="https://x.com/"><img src="images/x-logo.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/?hl=en"><img src="images/instagram-logo.png" alt="Instagram"></a>
+                </div>
+
+                <nav class="footer-a11y__nav" aria-label="Footer Navigation"> <!-- footer links -->
                     <ul>
-                        <li><a href="#">About</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="#top">Back To Top</a></li>
                     </ul>
                 </nav>
             </div>
@@ -156,6 +166,6 @@
                 <p>&copy; 2026 Four Guys Restaurant. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>
+    </footer>  
 </body>
 </html>
