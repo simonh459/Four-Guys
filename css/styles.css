@@ -227,9 +227,34 @@ body {
     background-color: var(--primary);
     border: 1px solid var(--primary);
     padding: 0.25rem 0.6rem;
+
     font-size: 0.8em;
+    min-width: 70px;
+
+    text-decoration: none; 
     border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
+
+.footer-a11y__button span {
+    color: black;
+}
+
+/* For images in accessibility buttons */
+.footer-a11y__button svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.back-to-top {
+    transform: translateX(6px);
+}
+
 .footer-a11y__options {
     display: flex;
     gap: 1rem;
@@ -240,7 +265,7 @@ body {
     justify-content: center;  /* horizontal center */
     align-items: center;      /* vertical center */
     gap: 15px;
-    margin-top: 2.50rem;
+    margin-top: 2rem;
 }
 
 .footer-a11y__social img {
@@ -250,13 +275,24 @@ body {
 
 .footer-a11y__nav {
     justify-self: end;
-    margin-top: 20px;
-}
-
-.footer-a11y__nav ul { /* Spacing between each link */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-end; /* keeps everything right-aligned */
+    gap: 15px;
+}
+
+.footer-a11y__hours {
+    text-align: right;
+}
+
+.footer-a11y__hours h4 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+}
+
+.footer-a11y__hours p {
+    margin: 2px 0;
+    font-size: 0.9rem;
 }
 /* ADD NEW CODE HERE */
 
