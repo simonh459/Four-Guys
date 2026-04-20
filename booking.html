@@ -160,43 +160,53 @@
   </div>
 </div>
 
-<!-- Footer -->
-<footer class="footer-a11y" role="contentinfo">
-    <div class="container">
-        <div class="footer-a11y__grid">
-            <div class="footer-a11y__controls">
-                <h3>Accessibility Tools</h3>
-                <div class="footer-a11y__options"> <!-- footer accesibility buttons -->
-                    <button id="darkModeBtn" type="button" class="btn footer-a11y__button" aria-pressed="false" aria-label="Toggle High Contrast Mode" onclick="darkmodeFunc()">
-                        <svg role="img" viewBox="0 0 24 24"><title>Contrast</title><path d="M12 22.314a10.314 10.314 0 110-20.628 10.314 10.314 0 010 20.628zM12 3.5a8.5 8.5 0 000 17V3.5z"/></svg>
-                        Contrast
-                    </button>
-                    <button id="toggle-text-size" class="btn footer-a11y__button" aria-pressed="false" aria-label="Toggle Text Size">
-                          <svg viewBox="0 0 24 24"><title>Text Size</title><path d="m22 6-3-4-3 4h2v4h-2l3 4 3-4h-2V6zM9.307 4l-6 16h2.137l1.875-5h6.363l1.875 5h2.137l-6-16H9.307zm-1.239 9L10.5 6.515 12.932 13H8.068z"/></svg>
-                        Text Size
-                    </button>
+    <!-- Footer -->
+    <footer class="footer-a11y" role="contentinfo">
+        <div class="container">
+            <div class="footer-a11y__grid">
+                <div class="footer-a11y__controls">
+                    <h3>Accessibility Tools</h3>
+                    <div class="footer-a11y__options"> <!-- footer accesibility buttons -->
+
+                        <button id="darkModeBtn" type="button" class="btn footer-a11y__button" aria-pressed="false" aria-label="Toggle High Contrast Mode" onclick="darkmodeFunc()">
+                            <svg role="img" viewBox="0 0 24 24"><title>Contrast</title><path d="M12 22.314a10.314 10.314 0 110-20.628 10.314 10.314 0 010 20.628zM12 3.5a8.5 8.5 0 000 17V3.5z"/></svg>
+                            Contrast
+                        </button>
+
+                        <button id="toggle-text-size" class="btn footer-a11y__button" aria-pressed="false" aria-label="Toggle Text Size">
+                             <svg role ="img" viewBox="0 0 24 24"><title>Text Size</title><path d="m22 6-3-4-3 4h2v4h-2l3 4 3-4h-2V6zM9.307 4l-6 16h2.137l1.875-5h6.363l1.875 5h2.137l-6-16H9.307zm-1.239 9L10.5 6.515 12.932 13H8.068z"/></svg>
+                            Text Size
+                        </button>
+
+                        <a href="#top" class="btn footer-a11y__button" aria-label="Back to top">
+                            <svg class="back-to-top" role="img" viewBox="0 0 24 24" aria-hidden="true" fill="black"><title>Back To Top</title><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+                            <span>Back To Top</span>
+                        </a>
+
+                    </div>
                 </div>
+
+                <div class="footer-a11y__social"> <!-- footer social media buttons -->
+                    <a href="https://www.facebook.com/?locale=en_GB"><img src="images/facebook-logo.png" alt="Facebook"></a>
+                    <a href="https://x.com/"><img src="images/x-logo.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/?hl=en"><img src="images/instagram-logo.png" alt="Instagram"></a>
+                </div>
+
+                <nav class="footer-a11y__nav" aria-label="Footer Navigation"> <!-- footer links -->
+
+                    <div class="footer-a11y__hours">
+                      <h4>Opening Hours</h4>
+                      <p>Mon-Sun: 12:00 - 22:00</p>
+                    </div>
+
+                    <div class="footer-a11y__copyright">
+                      <p>&copy; 2026 Four Guys Restaurant. All Rights Reserved.</p>
+                    </div>
+                </nav>
             </div>
 
-            <div class="footer-a11y__social"> <!-- footer social media buttons -->
-                <a href="https://www.facebook.com/?locale=en_GB"><img src="images/facebook-logo.png" alt="Facebook"></a>
-                <a href="https://x.com/"><img src="images/x-logo.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com/?hl=en"><img src="images/instagram-logo.png" alt="Instagram"></a>
-            </div>
-
-            <nav class="footer-a11y__nav" aria-label="Footer Navigation"> <!-- footer links -->
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Accessibility Statement</a></li>
-                    <li><a href="#top">Back To Top</a></li>
-                </ul>
-            </nav>
         </div>
-        <div class="footer-a11y__copyright">
-            <p>&copy; 2026 Four Guys Restaurant. All Rights Reserved.</p>
-        </div>
-    </div>
-</footer>  
+    </footer>  
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
