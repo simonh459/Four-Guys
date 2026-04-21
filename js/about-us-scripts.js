@@ -38,6 +38,19 @@
                 changeSlide(1);
             }, 5000);
 
+            const bookingBtn = document.getElementById("booking-btn");
+            if (bookingBtn) {
+                bookingBtn.addEventListener("click", () => {
+                    window.location.href = "booking.html";
+            });
+            }
+
+            const menuBtn = document.getElementById("menu-btn");
+            if (menuBtn) {
+                menuBtn.addEventListener("click", () => {
+                    window.location.href = "menu.html";
+            });
+            }
         });
 
 // jQuery code
