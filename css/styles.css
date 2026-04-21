@@ -381,6 +381,7 @@ body {
     --primary: #4dabf7;
 }
 
+/* Dark theme */
 body.dark-mode {
     --bg: #121212;
     --text: #f1f1f1;
