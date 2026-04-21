@@ -294,6 +294,10 @@ body {
     margin: 2px 0;
     font-size: 0.9rem;
 }
+
+.content {
+    flex: 1;
+}
 /* ADD NEW CODE HERE */
 
 
