@@ -260,12 +260,35 @@ body {
 }
 /* ADD NEW CODE HERE */
 
+body {
+  background: url('homeL.png') no-repeat center center fixed;
+  background-size: cover;
+}
+.hero-section {
+    padding: 100px 50px; /* Adds space around the text */
+    max-width: 800px;
+}
 
+.hero-title {
+    font-size: 8rem;        /* Makes the text huge */
+    font-weight: 900;      /* Extra bold */
+    line-height: 0.85;     /* Pulls the lines closer together vertically */
+    letter-spacing: -2px;  /* Pulls letters closer together horizontally */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #FFFFFF;        /* White text for BIG and JUICY */
+}
 
+.highlight {
+    color: #F2A900;        /* That specific "Burger Orange/Gold" color */
+}
 
-
-
-
+.hero-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    color: #E0E0E0;        /* Slightly off-white for the description */
+}
 
 
 
@@ -312,7 +335,47 @@ body, .card, .jumbotron, .accordion, .accordion-item, .accordion-button, .accord
   transition: background-color 0.5s ease, color 0.5s ease;
 }  
 
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px; /* Adds space between the two buttons */
+}
 
+.btn-orange {
+    background-color: #F2A900; /* The burger orange color */
+    color: #000000;            /* Black text for high contrast */
+    font-weight: 800;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;        /* Slightly rounded corners */
+    text-transform: uppercase;
+    transition: 0.3s;          /* Makes the hover effect smooth */
+}
+
+.btn-orange:hover {
+    background-color: #d19200; /* A slightly darker orange when hovering */
+    color: #000000;
+    transform: scale(1.05);    /* Makes the button slightly pop out */
+}
+
+/* Ensure the hero section doesn't have horizontal scroll */
+.hero-section {
+    padding: 100px 0;
+    overflow-x: hidden;
+}
+
+/* Style the images in the slideshow */
+.carousel-img {
+    height: 500px;         /* Adjust this height as needed */
+    object-fit: cover;     /* Crops the image to fit without stretching */
+    border-radius: 20px;   /* Optional: adds rounded corners to your slides */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Makes the images "pop" */
+}
+
+/* Optional: Fade transition instead of sliding */
+.carousel-fade .carousel-item {
+    transition-duration: 0.8s;
+}
 
 body {
     background-color: var(--bg);

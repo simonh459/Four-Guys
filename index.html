@@ -1,7 +1,7 @@
 <html>
 <head>    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us Page</title>
+    <title>Home page</title>
     <link rel="icon" type="image/x-icon" href="images/Four_Guys-favicon.png"> <!-- Favicon image for top bar-->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -10,6 +10,26 @@
     <script src="js/jquery.js"></script> <!--  only needed if using jquery--> 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/darkmode.js" defer></script>
+
+  <!--bg image-->
+  <style>
+  body {
+    /* The path to your image */
+    background-image: url('images/homeL.png');
+
+    /* Keep the image from repeating */
+    background-repeat: no-repeat;
+
+    /* Make the image cover the entire screen */
+    background-size: cover;
+
+    /* Keep the image fixed so it doesn't scroll with the page */
+    background-attachment: fixed;
+
+    /* Center the image */
+    background-position: center;
+  }
+</style>
 </head>
 
 <body>
@@ -37,7 +57,7 @@
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">About us</a>
+              <a class="nav-link" href="about-us.html">About us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="faqs.html">FAQs</a>
@@ -51,6 +71,41 @@
       </div>
     </nav> <!-- End of nav bar-->
 
+<!-- text-->
+<div class="hero-section">
+    <h1 class="hero-title">
+        BIG.<br>
+        JUICY.<br>
+        <span class="highlight">BURGERS.</span>
+    </h1>
+    <p class="hero-subtitle">
+        Freshly smashed patties, melted cheese, and bold flavors stacked high. 
+        <b>Four Guys</b> serves oversized burgers made to satisfy serious cravings. 
+        No shortcuts, just pure bite power.
+    </p>
+  <div class="hero-buttons">
+        <a href="booking.html" class="btn btn-orange">ORDER NOW</a>
+        <a href="menu.html" class="btn btn-orange">MENU</a>
+    </div>
+
+  <div class="col-md-6">
+            <div id="burgerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slide1.avif" class="d-block w-100 carousel-img" alt="Burger 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide2.jpg" class="d-block w-100 carousel-img" alt="Burger 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide3.jpg" class="d-block w-100 carousel-img" alt="Burger 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide4.jpg" class="d-block w-100 carousel-img" alt="Burger 4">
+                </div>
+            </div>
+        
+</div>
 
 
 <!-- Footer -->
