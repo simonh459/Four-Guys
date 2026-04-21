@@ -12,7 +12,7 @@ $(document).ready(function() {
         let remaining = maxChars - $(this).val().length;
 
         $("#charcount").text(remaining);
-        $("#charcount").css("color", remaining <= 20 ? "red" : "black");
+        $("#charcount").css("color", remaining <= 20 ? "red" : "");
     });
 
     // Form validation
