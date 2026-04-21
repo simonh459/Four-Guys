@@ -129,9 +129,50 @@
           </div>
       </div>
     </div>
+
+    <br>
+
+    <!-- Slideshow -->
+    <div class="col-md-6 offset-lg-3 h-100">
+      <div class="slideshow">
+
+        <div class="slide">
+          <img src="images/faqs-waiter-taking-orders-restaurant.jpg" class="img-fluid" alt="A picture of one of our waiters gracefully serving customers">
+        </div>
+
+        <div class="slide">
+          <img src="images/faqs-restaurant-kitchen.jpg" class="img-fluid" alt="A behind the scenes look at one of our kitchens">
+        </div>
+
+        <div class="slide">
+            <img src="images/faqs-restaraunt-floor.jpeg" class="img-fluid" alt="An image of a part of our restaraunt floor">
+        </div>
+
+        <div class="slide">
+            <img src="images/faqs-burger-restaraunt.jpg" class="img-fluid" alt="A freshly prepared burger from our kitchen.">
+        </div>
+
+        <!-- Interactive dots -->
+        <div class="dots">
+          <span class="dot" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+          <span class="dot" onclick="goToSlide(3)"></span>
+        </div>
+
+        <!-- Arrows -->
+        <button class="arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="arrow next" onclick="changeSlide(1)">&#10095;</button>
+        
+      </div>
+    </div>
+
   </div>
   <br>
   
+  
+    
+
     <!-- Footer -->
     <footer class="footer-a11y" role="contentinfo">
         <div class="container">
@@ -179,5 +220,8 @@
 
         </div>
     </footer>
+
+  <script src="js/about-us-scripts.js"></script>
 </body>
+  
 </html>
