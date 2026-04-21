@@ -1,22 +1,5 @@
  document.addEventListener('DOMContentLoaded', () => {
-            const body = document.body;
-            const textSizeButton = document.getElementById('toggle-text-size');
             const dots = document.querySelectorAll(".dot");
-
-            // Function to toggle a class on the body and update the button state
-            function toggleOption(button, className) {
-                body.classList.toggle(className);
-                const isActive = body.classList.contains(className);
-                button.classList.toggle('is-active', isActive);
-                button.setAttribute('aria-pressed', isActive);
-            }
-
-            // Toggle Large Text Size
-            if (textSizeButton) {
-                textSizeButton.addEventListener('click', () => {
-                    toggleOption(textSizeButton, 'large-text');
-                });
-            }
 
             //Slideshow
             let currentSlide = 0;
@@ -55,6 +38,19 @@
                 changeSlide(1);
             }, 5000);
 
+            const bookingBtn = document.getElementById("booking-btn");
+            if (bookingBtn) {
+                bookingBtn.addEventListener("click", () => {
+                    window.location.href = "booking.html";
+            });
+            }
+
+            const menuBtn = document.getElementById("menu-btn");
+            if (menuBtn) {
+                menuBtn.addEventListener("click", () => {
+                    window.location.href = "menu.html";
+            });
+            }
         });
 
 // jQuery code

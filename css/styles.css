@@ -165,7 +165,7 @@ body.large-text .jumbotron-image {
 
 
 /*  paragraph padding for card and jumbotron*/
-p {
+.about-us-p {
     padding-left: 128px;
     padding-right: 128px;
     padding-top: 32px;
@@ -227,9 +227,34 @@ body {
     background-color: var(--primary);
     border: 1px solid var(--primary);
     padding: 0.25rem 0.6rem;
+
     font-size: 0.8em;
+    min-width: 70px;
+
+    text-decoration: none; 
     border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
+
+.footer-a11y__button span {
+    color: black;
+}
+
+/* For images in accessibility buttons */
+.footer-a11y__button svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.back-to-top {
+    transform: translateX(6px);
+}
+
 .footer-a11y__options {
     display: flex;
     gap: 1rem;
@@ -240,7 +265,7 @@ body {
     justify-content: center;  /* horizontal center */
     align-items: center;      /* vertical center */
     gap: 15px;
-    margin-top: 2.50rem;
+    margin-top: 2rem;
 }
 
 .footer-a11y__social img {
@@ -250,13 +275,28 @@ body {
 
 .footer-a11y__nav {
     justify-self: end;
-    margin-top: 20px;
-}
-
-.footer-a11y__nav ul { /* Spacing between each link */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-end; /* keeps everything right-aligned */
+    gap: 15px;
+}
+
+.footer-a11y__hours {
+    text-align: right;
+}
+
+.footer-a11y__hours h4 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+}
+
+.footer-a11y__hours p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+}
+
+.content {
+    flex: 1;
 }
 /* ADD NEW CODE HERE */
 
@@ -289,6 +329,37 @@ body {
     max-width: 600px;
     color: #E0E0E0;        /* Slightly off-white for the description */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -331,7 +402,7 @@ body.dark-mode {
 }
 
 /* Smooth theme transition */
-body, .card, .jumbotron, .accordion, .accordion-item, .accordion-button, .accordion-body, .accordion-button::after, .accordion-button:not(.collapsed), .footer-a11y, .footer-a11y__button, .jumbotron, .navbar {
+body, .card, .jumbotron, .accordion, .accordion-item, .accordion-button, .accordion-body, .accordion-button::after, .accordion-button:not(.collapsed), .footer-a11y, .footer-a11y__button, .jumbotron, .navbar, .review-card, .booking-container {
   transition: background-color 0.5s ease, color 0.5s ease;
 }  
 
@@ -439,4 +510,16 @@ body.dark-mode .accordion-button::after {
 
 a {
     color: var(--primary);
+}
+
+.review-card {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.booking-container {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border-color: var(--border);
 }
