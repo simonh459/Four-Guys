@@ -1,0 +1,99 @@
+      /* MENU CSS PAGE*/
+	  
+	  
+	  /* Navbar */
+    .navbar {
+  padding: 15px;
+  background: #693F26;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2rem;    
+  color: #000000
+  margin: 0 auto;
+}
+ 
+
+
+#logo {
+  border-radius: 8px;
+  width: 120px; 
+  height: 120px;
+}
+	  
+	  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #FFFFFF;
+      color: #000;
+    }
+
+    header {
+      background: #c0392b;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .menu {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .menu h2 {
+      border-bottom: 2px solid #c0392b;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #333;
+    }
+
+    .menu-item h3 {
+      margin: 0;
+    }
+
+    .menu-item p {
+      margin: 5px 0 0;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #f39c12;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      margin-top: 40px;
+    }
+	
+	.footer-a11y__social img{
+		width: 75px;
+		height: 75px;
+	}
+	
+	.footer-a11y {
+		background: #ffffff;
+		colour: #000000;
+	}
+	
+	
+	
+	
+	   
+		   
