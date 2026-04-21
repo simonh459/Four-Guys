@@ -6,13 +6,13 @@ $(document).ready(function() {
     });
 
     // Character counter
-    const maxChars = 100;
+    const maxChars = 200;
 
     $("#requests").on("input", function() {
         let remaining = maxChars - $(this).val().length;
 
         $("#charcount").text(remaining);
-        $("#charcount").css("color", remaining <= 15 ? "red" : "black");
+        $("#charcount").css("color", remaining <= 20 ? "red" : "black");
     });
 
     // Form validation
