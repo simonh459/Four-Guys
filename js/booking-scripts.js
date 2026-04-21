@@ -30,19 +30,19 @@ $(document).ready(function() {
 
         // name validation
         if (name === "" || /\d/.test(name)) { // checks if name field is blank and uses regex to check for digits
-            alert("Enter a valid name!")
+            alert("Enter a valid name! (Must not include numbers)")
             isValid = false;
         }
         
         // email validation
         if (email === "" || !email.includes("@") || !email.includes(".")) { // checks if email is blank as well as whether is contains an "@" and "." like most standard emails
-            alert("Enter a valid email address!")
+            alert("Enter a valid email address! (Must include and '@' and '.')")
             isValid = false;
         }
 
         // phone number validation
         if (phone === "" || !/^\d{11}$/.test(phone)) { // checks if phone is blank or not equal to exactly 11 digits in length
-            alert("Enter a valid phone number!")
+            alert("Enter a valid phone number! (Must be 11 digits)")
             isValid = false;
         }
 
