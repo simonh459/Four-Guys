@@ -378,6 +378,8 @@ body {
     --accordion-header-bg: #f8f9fa;
     --accordion-active-bg: #e9ecef;
 
+    --charcount-color: #212529; 
+
     --primary: #4dabf7;
 }
 
@@ -393,6 +395,8 @@ body.dark-mode {
     --accordion-bg: #1e1e1e;
     --accordion-header-bg: #2a2a2a;
     --accordion-active-bg: #333;
+
+    --charcount-color: #f1f1f1;
 
     --primary: #4dabf7;
 }
@@ -523,4 +527,8 @@ a {
     background-color: var(--card-bg);
     color: var(--text);
     border-color: var(--border);
+}
+
+#charcount {
+    color: var(--charcount-color);
 }
