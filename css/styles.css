@@ -165,7 +165,7 @@ body.large-text .jumbotron-image {
 
 
 /*  paragraph padding for card and jumbotron*/
-.about-us-p {
+p {
     padding-left: 128px;
     padding-right: 128px;
     padding-top: 32px;
@@ -227,34 +227,9 @@ body {
     background-color: var(--primary);
     border: 1px solid var(--primary);
     padding: 0.25rem 0.6rem;
-
     font-size: 0.8em;
-    min-width: 70px;
-
-    text-decoration: none; 
     border-radius: 6px;
-
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
 }
-
-.footer-a11y__button span {
-    color: black;
-}
-
-/* For images in accessibility buttons */
-.footer-a11y__button svg {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 8px;
-}
-
-.back-to-top {
-    transform: translateX(6px);
-}
-
 .footer-a11y__options {
     display: flex;
     gap: 1rem;
@@ -265,7 +240,7 @@ body {
     justify-content: center;  /* horizontal center */
     align-items: center;      /* vertical center */
     gap: 15px;
-    margin-top: 2rem;
+    margin-top: 2.50rem;
 }
 
 .footer-a11y__social img {
@@ -275,28 +250,13 @@ body {
 
 .footer-a11y__nav {
     justify-self: end;
+    margin-top: 20px;
+}
+
+.footer-a11y__nav ul { /* Spacing between each link */
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* keeps everything right-aligned */
-    gap: 15px;
-}
-
-.footer-a11y__hours {
-    text-align: right;
-}
-
-.footer-a11y__hours h4 {
-    margin: 0 0 5px 0;
-    font-size: 1rem;
-}
-
-.footer-a11y__hours p {
-    margin: 2px 0;
-    font-size: 0.9rem;
-}
-
-.content {
-    flex: 1;
+    gap: 10px;
 }
 /* ADD NEW CODE HERE */
 
@@ -329,38 +289,28 @@ body {
     max-width: 600px;
     color: #E0E0E0;        /* Slightly off-white for the description */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Fixes the video size and position */
+.hero-video {
+    width: 100%;            /* Fills the column */
+    max-width: 550px;       /* Keeps it a reasonable size */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+/* Fixes the squashed text */
+.hero-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 500px; /* Limits width so it doesn't span the whole screen */
+    color: #E0E0E0;
+    margin-bottom: 30px;
+}
+/* Ensures the section fills the screen height */
+.hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
 
 
 /* DARK MODE */
@@ -402,7 +352,7 @@ body.dark-mode {
 }
 
 /* Smooth theme transition */
-body, .card, .jumbotron, .accordion, .accordion-item, .accordion-button, .accordion-body, .accordion-button::after, .accordion-button:not(.collapsed), .footer-a11y, .footer-a11y__button, .jumbotron, .navbar, .review-card, .booking-container {
+body, .card, .jumbotron, .accordion, .accordion-item, .accordion-button, .accordion-body, .accordion-button::after, .accordion-button:not(.collapsed), .footer-a11y, .footer-a11y__button, .jumbotron, .navbar {
   transition: background-color 0.5s ease, color 0.5s ease;
 }  
 
@@ -429,58 +379,34 @@ body, .card, .jumbotron, .accordion, .accordion-item, .accordion-button, .accord
     transform: scale(1.05);    /* Makes the button slightly pop out */
 }
 
-/* Ensure the hero section doesn't have horizontal scroll */
-.hero-section {
+/* Ensure the hero area spans the full screen width */
+#home-hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    max-width: 100% !important; /* This removes the 800px wall */
     padding: 100px 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-/* Style the images in the slideshow */
-.carousel-img {
-    height: 500px;         /* Adjust this height as needed */
-    object-fit: cover;     /* Crops the image to fit without stretching */
-    border-radius: 20px;   /* Optional: adds rounded corners to your slides */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Makes the images "pop" */
+/* Ensure text doesn't collapse */
+#home-hero .hero-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 550px !important; /* Gives the text room to breathe */
+    color: #E0E0E0;
+    margin-bottom: 30px;
+    padding: 0 !important; /* Removes that 128px padding you have on 'p' tags */
 }
 
-/* Optional: Fade transition instead of sliding */
-.carousel-fade .carousel-item {
-    transition-duration: 0.8s;
-}
-
-body {
-    background-color: var(--bg);
-    color: var(--text);
-}
-
-.card {
-    background-color: var(--card-bg);
-    color: var(--text);
-    border-color: var(--border);
-}
-
-/* Container */
-.accordion {
-    --bs-accordion-bg: var(--accordion-bg);
-    --bs-accordion-border-color: var(--border);
-}
-
-/* Items */
-.accordion-item {
-    background-color: var(--accordion-bg);
-    border-color: var(--border);
-}
-
-/* Buttons */
-.accordion-button {
-    background-color: var(--accordion-header-bg);
-    color: var(--text);
-}
-
-/* Expanded state */
-.accordion-button:not(.collapsed) {
-    background-color: var(--accordion-active-bg);
-    color: var(--text);
+/* Make video big and pinned to the right */
+.hero-video {
+    width: 100% !important;
+    max-width: 600px !important; /* Makes it bigger */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.7);
 }
 
 /* Body */
@@ -510,16 +436,4 @@ body.dark-mode .accordion-button::after {
 
 a {
     color: var(--primary);
-}
-
-.review-card {
-    background-color: var(--card-bg);
-    color: var(--text);
-    border-color: var(--border);
-}
-
-.booking-container {
-    background-color: var(--card-bg);
-    color: var(--text);
-    border-color: var(--border);
 }
