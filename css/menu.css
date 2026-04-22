@@ -10,7 +10,7 @@
 .navbar-brand {
   font-weight: bold;
   font-size: 2rem;    
-  color: #000000
+  color: #000000;
   margin: 0 auto;
 }
  
@@ -74,23 +74,9 @@
       font-weight: bold;
       color: #f39c12;
     }
+    
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      margin-top: 40px;
-    }
-	
-	.footer-a11y__social img{
-		width: 75px;
-		height: 75px;
-	}
-	
-	.footer-a11y {
-		background: #ffffff;
-		colour: #000000;
-	}
+
 	
 	
 	

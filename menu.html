@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <meta charset= "UTF-8">
- <title> Four Guys Menu</title>
-  <link rel="stylesheet" href="new 1.css" />
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu Page</title>
+    <link rel="icon" type="image/x-icon" href="images/Four_Guys-favicon.png"> <!-- Favicon image for top bar-->
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
     
         <!-- Logo / Brand -->
-        <span class="navbar-brand d-flex align-items-center href="index.html">
-          <img id="logo" src="Four_Guys-favicon.png" alt="Four guys Logo" class="me-3">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img id="logo" src="images/logo.png" alt="Four guys Logo" class="me-3">
          Four Guys
         </a>
 
@@ -31,7 +36,10 @@
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">About us</a>
+              <a class="nav-link" href="about-us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">FAQs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="booking.html">Booking</a>
@@ -42,45 +50,45 @@
       </div>
     </nav> <!-- End of nav bar-->
 
-<div class="menu">
-  <h2>Main Menu</h2>
+  <div class="menu">
+    <h2>Main Menu</h2>
 
-  <div class="menu-item">
-    <div>
-      <h3>Classic Cheeseburger</h3>
-      <p>Beef patty, cheddar cheese, lettuce, tomato</p>
+    <div class="menu-item">
+      <div>
+        <h3>Classic Cheeseburger</h3>
+        <p>Beef patty, cheddar cheese, lettuce, tomato</p>
+      </div>
+      <div class="price">£7.99</div>
     </div>
-    <div class="price">£7.99</div>
-  </div>
 
-  <div class="menu-item">
-    <div>
-      <h3>Bacon BBQ Burger</h3>
-      <p>Beef, crispy bacon, BBQ sauce, onion rings</p>
+    <div class="menu-item">
+      <div>
+        <h3>Bacon BBQ Burger</h3>
+        <p>Beef, crispy bacon, BBQ sauce, onion rings</p>
+      </div>
+      <div class="price">£9.99</div>
     </div>
-    <div class="price">£9.99</div>
-  </div>
 
-  <div class="menu-item">
-    <div>
-      <h3>Spicy Chicken Burger</h3>
-      <p>Fried chicken, spicy mayo, pickles, lettuce</p>
+    <div class="menu-item">
+      <div>
+        <h3>Spicy Chicken Burger</h3>
+        <p>Fried chicken, spicy mayo, pickles, lettuce</p>
+      </div>
+      <div class="price">£8.99</div>
     </div>
-    <div class="price">£8.99</div>
-  </div>
-  
-  <div class=" menu-item">
-   <div>
-      <h3>Margherita Pizza</h3>
-	  <P>Tomato sauce, mozzarella cheese, basil</p>
-	  </div>
-    <div class="price">£10</div>
-  </div>
+    
+    <div class="menu-item">
+    <div>
+        <h3>Margherita Pizza</h3>
+      <p>Tomato sauce, mozzarella cheese, basil</p>
+      </div>
+      <div class="price">£10</div>
+    </div>
 
    <div class=" menu-item">
    <div>
-      <h3>pepperoni Pizza</h3>
-	  <P>Tomato sauce, mozzarella cheese, pepperoni</p>
+      <h3>Pepperoni Pizza</h3>
+	  <p>Tomato sauce, mozzarella cheese, pepperoni</p>
 	  </div>
     <div class="price">£11</div>
   </div>
@@ -94,7 +102,8 @@
     <div class="price">£12</div>
   </div>
   
-  <h2>sides</h2> 
+
+  <h2 class="mt-5">Sides</h2> 
 
   <div class="menu-item">
     <div>
@@ -105,12 +114,7 @@
   </div>
   
   
-	  
-	 
-
-
-
-<h2>Drinks</h2>
+<h2 class="mt-5">Drinks</h2>
 
   <div class="menu-item">
     <div>
@@ -128,15 +132,14 @@
     <div class="price">£3.99</div>
   </div>
 </div>
-</div>
 
 
-<!-- Footer -->
+
+    <!-- Footer -->
     <footer class="footer-a11y" role="contentinfo">
         <div class="container">
             <div class="footer-a11y__grid">
-               
-			   <div class="footer-a11y__controls">
+                <div class="footer-a11y__controls">
                     <h3>Accessibility Tools</h3>
                     <div class="footer-a11y__options"> <!-- footer accesibility buttons -->
 
@@ -149,38 +152,41 @@
                              <svg role ="img" viewBox="0 0 24 24"><title>Text Size</title><path d="m22 6-3-4-3 4h2v4h-2l3 4 3-4h-2V6zM9.307 4l-6 16h2.137l1.875-5h6.363l1.875 5h2.137l-6-16H9.307zm-1.239 9L10.5 6.515 12.932 13H8.068z"/></svg>
                             Text Size
                         </button>
-						
-						
-                         </div>
-						 </div>
-                    
-					<div class="footer-a11y__hours">
-                      <h4>Opening Hours</h4>
+
+                        <a href="#top" class="btn footer-a11y__button" aria-label="Back to top">
+                            <svg class="back-to-top" role="img" viewBox="0 0 24 24" aria-hidden="true" fill="black"><title>Back To Top</title><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+                            <span>Back To Top</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="footer-a11y__social"> <!-- footer social media buttons -->
+                    <a href="https://www.facebook.com/?locale=en_GB"><img src="images/facebook-logo.png" alt="Facebook"></a>
+                    <a href="https://x.com/"><img src="images/x-logo.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/?hl=en"><img src="images/instagram-logo.png" alt="Instagram"></a>
+                </div>
+
+                <nav class="footer-a11y__nav" aria-label="Footer Navigation"> <!-- footer links -->
+
+                    <div class="footer-a11y__hours">
+                      <h5>Opening Hours</h5>
                       <p>Mon-Sun: 12:00 - 22:00</p>
                     </div>
-                    
-					<div class="footer-a11y__social"> <!-- footer social media buttons -->
-                    <a href="https://www.facebook.com/?locale=en_GB"><img src="facebook-logo.png" alt="Facebook"></a>
-                    <a href="https://x.com/"><img src="x-logo.png" alt="Twitter"></a>
-                    <a href="https://www.instagram.com/?hl=en"><img src="instagram-logo.png"></a>
-                </div>
-                    
-					<div class="footer-a11y__copyright">
+
+                    <div class="footer-a11y__copyright">
                       <p>&copy; 2026 Four Guys Restaurant. All Rights Reserved.</p>
                     </div>
-                
+                </nav>
             </div>
 
         </div>
-    </footer>  
-
-
-                        
-
-                    
+    </footer>
+        
                
-
-<script src="accessibility.js"></script>
+<script src="js/jquery.js"></script> <!--  only needed if using jquery--> 
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/accessibility.js"></script>
 
 </body>
 </html>
