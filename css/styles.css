@@ -165,7 +165,7 @@ body.large-text .jumbotron-image {
 
 
 /*  paragraph padding for card and jumbotron*/
-p {
+.about-us-p {
     padding-left: 128px;
     padding-right: 128px;
     padding-top: 32px;
@@ -287,10 +287,7 @@ body {
 
 /* INDEX PAGE CSS */
 
-body {
-  background: url('homeL.png') no-repeat center center fixed;
-  background-size: cover;
-}
+
 .hero-section {
     padding: 100px 50px; /* Adds space around the text */
     max-width: 800px;
@@ -318,7 +315,39 @@ body {
 }
 
 
+ /* MENU PAGE CSS */
 
+.menu {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-size: var(--base-font-size);
+
+}
+
+.menu h2 {
+  border-bottom: 2px solid #c0392b;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.menu-item h3 {
+  margin: 0;
+}
+
+.menu-item p {
+  margin: 5px 0 0;
+  font-size: 1em;
+  color: #ccc;
+} 
 
 
 
