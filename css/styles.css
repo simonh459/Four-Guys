@@ -480,6 +480,41 @@ body, .card, .jumbotron, .accordion, .accordion-item, .accordion-button, .accord
     box-shadow: 0 20px 50px rgba(0,0,0,0.7);
 }
 
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+/* Container */
+.accordion {
+    --bs-accordion-bg: var(--accordion-bg);
+    --bs-accordion-border-color: var(--border);
+}
+
+/* Items */
+.accordion-item {
+    background-color: var(--accordion-bg);
+    border-color: var(--border);
+}
+
+/* Buttons */
+.accordion-button {
+    background-color: var(--accordion-header-bg);
+    color: var(--text);
+}
+
+/* Expanded state */
+.accordion-button:not(.collapsed) {
+    background-color: var(--accordion-active-bg);
+    color: var(--text);
+}
+
 /* Body */
 .accordion-body {
     background-color: var(--accordion-bg);
