@@ -201,6 +201,8 @@ body {
     font-size: var(--base-font-size);
     background-color: var(--bg);
     color: var(--text);
+    font-family: Arial, sans-serif;
+
 }
 
 .card {
@@ -227,7 +229,11 @@ body {
     background-color: var(--primary);
     border: 1px solid var(--primary);
     padding: 0.25rem 0.6rem;
+
     font-size: 0.8em;
+    min-width: 70px;
+
+    text-decoration: none; 
     border-radius: 6px;
 }
 .footer-a11y__options {
@@ -256,9 +262,30 @@ body {
 .footer-a11y__nav ul { /* Spacing between each link */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-end; /* keeps everything right-aligned */
+    gap: 15px;
 }
-/* ADD NEW CODE HERE */
+
+.footer-a11y__hours {
+    text-align: right;
+}
+
+.footer-a11y__hours h4 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+}
+
+.footer-a11y__hours p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+}
+
+.content {
+    flex: 1;
+}
+
+
+/* INDEX PAGE CSS */
 
 body {
   background: url('homeL.png') no-repeat center center fixed;
@@ -289,28 +316,38 @@ body {
     max-width: 600px;
     color: #E0E0E0;        /* Slightly off-white for the description */
 }
-/* Fixes the video size and position */
-.hero-video {
-    width: 100%;            /* Fills the column */
-    max-width: 550px;       /* Keeps it a reasonable size */
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-}
-/* Fixes the squashed text */
-.hero-subtitle {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 500px; /* Limits width so it doesn't span the whole screen */
-    color: #E0E0E0;
-    margin-bottom: 30px;
-}
-/* Ensures the section fills the screen height */
-.hero-section {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* DARK MODE */
@@ -328,9 +365,12 @@ body {
     --accordion-header-bg: #f8f9fa;
     --accordion-active-bg: #e9ecef;
 
+    --charcount-color: #212529; 
+
     --primary: #4dabf7;
 }
 
+/* Dark theme */
 body.dark-mode {
     --bg: #121212;
     --text: #f1f1f1;
@@ -342,6 +382,8 @@ body.dark-mode {
     --accordion-bg: #1e1e1e;
     --accordion-header-bg: #2a2a2a;
     --accordion-active-bg: #333;
+
+    --charcount-color: #f1f1f1;
 
     --primary: #4dabf7;
 }
@@ -436,4 +478,16 @@ body.dark-mode .accordion-button::after {
 
 a {
     color: var(--primary);
+}
+
+.review-card {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.booking-container {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border-color: var(--border);
 }
